@@ -1,0 +1,375 @@
+/* reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Signika ;
+    color: #464646;
+
+}
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* scroll bar end */
+
+/* Universal */
+.container{
+    width: 95%;
+    margin: auto;
+}
+.f-container{
+    width: 90%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* all buttons */
+.btn{
+    display: inline-block;
+    text-decoration: none;
+
+}
+.btn:hover{
+    color:#fff;
+}
+.btn i:hover{
+    color:#fff;
+}
+.btn-white{
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .35rem 1.5rem;
+    border-radius: 20px;
+}
+.btn-white:hover{
+    
+    color:#000;
+    transform: scale(1.1);
+}
+
+.btn-border, .btn-border i{
+    color: #fff;
+    background-color: #121212;
+    font-size: .7rem;
+    padding: .3rem .5rem;
+
+
+}
+.btn-border{
+    border: 1px solid #fff;
+    border-radius: 30px;
+
+}
+.btn-border:hover{
+    transform: scale(1.1);
+
+}
+
+.btn-underline:hover{
+    text-decoration: underline;
+}
+.btn-social i{
+    color: #fff;
+    padding: .5rem;
+    background-color: #464646;
+    border-radius: 50%;
+
+}
+.hover-round{
+    padding: .2rem;
+    border-radius: 50%;
+}
+.hover-round:hover{
+    background-color: #464646;
+}
+
+
+.main-body{
+    display: flex;
+
+}
+
+/* left side of the page */
+
+.left-side{
+    max-width: 25rem;
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: .4rem;
+}
+/* in left side, Section "a" is the section with logo */
+.left-side .section-a{
+    background-color: #121212;
+    margin: .6rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.left-side .logo-card{
+    
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  
+}
+.left-side .logo-card > *{
+    padding-top: 10px;
+   
+  
+}
+.left-side .logo-card > *{
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+.left-side img{
+    width: 25%;
+    min-width: 5rem;
+    padding-top: none;
+    
+}
+
+/* left side Section b is the second card on the left side */
+
+.left-side .section-b{
+    background-color: #121212;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: .6rem;
+    padding-top:1rem;
+    padding-bottom:.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.left-side .section-b h3, .left-side .section-b p{
+    color: #fff;
+}
+.left-side .section-b .library-head{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    margin: .5rem auto;
+
+ 
+}
+.left-side .section-b .playlist-card{
+    background-color: #242424;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: .6rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    margin-bottom:1rem ;
+    margin-top: 1.5rem ;
+    width: 93%;
+ 
+}
+.left-side .section-b h3{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+.left-side .section-b p{
+    font-size: .8rem;
+    margin: 1rem auto;
+
+}
+.left-side .section-b .podcast-card{
+    background-color: #242424;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: .6rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    width: 93%;
+    margin-bottom:3rem ;
+    margin-top: .5rem ;
+ 
+}
+.left-side .section-b .footer-side{
+    margin: .6rem;
+    padding-top:1.5rem;
+    width: 93%;
+ 
+}
+.footer-side ul li a{
+    font-size: .6rem;
+    margin-right:1rem ;
+    font-weight: 400s;
+    color: #B3B3B3;
+ 
+}
+.footer-side .btn-border{
+  
+    margin-bottom: 2rem;
+  
+}
+
+/* Right side of the page */
+
+
+.right-side{
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom,#1F1F1F , #050505);
+    margin:1rem;
+    height: 100vh;
+    border-radius:10px ;
+    overflow-y: scroll;
+}
+
+
+.right-side .section-a .sign .btn{ 
+    margin-right: 1rem;
+    
+    
+}
+.right-side .section-a .container{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+}
+.right-side .section-b{
+    min-width:10rem;
+    background-image: linear-gradient(to bottom,#242424 , #050505);
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+}
+.right-side .section-b .playlist-card .card-head{
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 0;
+}
+
+.right-side .section-b .playlist-card .card-head h2{
+    color: #fff;
+}
+.right-side .section-b .playlist-card .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-template-rows:1fr  ;
+}
+.right-side .section-b .playlist-card .cards .card img{
+    width: 100%;
+}
+.right-side .section-b .playlist-card .cards .card{
+    margin: .8rem;
+    padding: .8rem;
+    background: linear-gradient(to bottom,#050505,#242424  );
+    border-radius: 15px;
+}
+.right-side .section-b .playlist-card .cards .card h3{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.right-side .section-b .playlist-card .cards .card p{
+    color: #8f8f8f;
+    font-size: .8rem;
+}
+.right-side .section-b .playlist-card .footer-main{
+    display: flex;
+    justify-content: space-between;
+}
+.right-side .section-b .playlist-card .footer-main .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+.right-side .section-b .playlist-card .footer-main .links .link-col {
+    margin-right: 1rem;
+}
+.right-side .section-b .playlist-card .footer-main .links .link-col h3 {
+    color: #fff;
+}
+.right-side .section-b .playlist-card .footer-main .links .link-col ul li a {
+    margin-top: .6rem;
+}
+.right-side .section-b .playlist-card .footer-main .social >*{
+    margin-left: .4rem;
+}
+hr{
+    margin: 1.5rem auto;
+}
+
+.bottom-banner{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to Right,#AF2997,#509AF4  );
+    border-radius: 15px;
+    border-radius: 0;
+    margin: .5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.bottom-banner p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
